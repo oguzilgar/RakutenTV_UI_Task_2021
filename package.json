@@ -1,0 +1,23 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oguzilgar/RakutenTV_UI_Task_2021.git"
+  },
+  "author": "oguzIlgar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oguzilgar/RakutenTV_UI_Task_2021/issues"
+  },
+  "homepage": "https://github.com/oguzilgar/RakutenTV_UI_Task_2021#readme",
+  "devDependencies": {
+    "cypress": "^7.1.0",
+    "cypress-iframe": "^1.0.1"
+  }
+}

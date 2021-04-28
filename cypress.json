@@ -1,0 +1,17 @@
+{
+  "env":{
+    "user":{
+    "email" : "TestEmailAddress@gmail.com",
+    "password" : "Test12345",
+    "searchMovie" : "cortex"
+    }
+  },
+    "video": false,
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 60000,
+    "requestTimeout": 60000,
+    "viewportWidth": 1920,
+    "viewportHeight": 1200,
+    "rakutenBaseUrl": "https://www.rakuten.tv/de"
+  }
+ 
