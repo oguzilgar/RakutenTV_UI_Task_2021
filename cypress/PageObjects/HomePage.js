@@ -4,7 +4,7 @@ class HomePage {
     }
 
     clickRegisterButton() {
-        cy.get('[data-test-id="menu-desktop-register-link"]').should('have.text', 'Konto erstellen').click()
+        cy.get('[data-test-id="menu-desktop-register-link"]').should('have.text', 'Registrarse').click()
         cy.url().should('eq', Cypress.config('rakutenBaseUrl') + '/registrations/new');
     }
 
@@ -17,7 +17,7 @@ class HomePage {
     }
 
     clickLoginButton() {
-        cy.get('[data-test-id="menu-desktop-login-link"]').should('have.text', 'Einloggen').click();
+        cy.get('[data-test-id="menu-desktop-login-link"]').should('have.text', 'Entrar').click();
         cy.url().should('eq', Cypress.config('rakutenBaseUrl') + '/sessions/sign_in');
     }
 

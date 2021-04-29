@@ -13,11 +13,16 @@ class RegisterPage {
     clickCheckbox() {
         cy.get('#opt_in_register').click({ force: true });
         cy.get('#terms_check_register').click({ force: true });
-        cy.get('.terms-conditions__link').should('have.text', 'Ich stimme den Nutzungsbedingungen zu, Ich habe die Datenschutzbestimmungen und Cookie-Richtlinien gelesen, Ich stimme den Vertragsbedingungen zu.');
+        cy.get('.terms-conditions__link').should('have.text', 'Acepto las condiciones de uso, Acepto las Condiciones Contractuales, He leído la Política de Privacidad y la Política de Cookies.');
     }
 
     clickRegisterButton() {
         cy.get('.card--register .form__submit button').should('not.have.class', 'button--inactive').click();
+    }
+
+    isWrongCredentialsMessageDisplayed(){
+        const warningText = "Credenciales no válidas";
+        cy.get('.notifications__item__message').should('contain',warningText)
     }
 }
 

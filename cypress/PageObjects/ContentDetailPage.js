@@ -10,16 +10,12 @@ class ContentDetailPage {
 
     clickAddToWishlistIcon() {
         cy.get('.round-action--wishlist').invoke('text').then((txt) => {
-            cy.log('ouztest')
-            cy.log(txt.trim())
-            if (txt.trim() == 'Zur Merkliste hinzufügen') {
+            if (txt.trim() == 'Añadir a Quiero Ver') {
                 cy.get('.round-action--wishlist').should('not.have.class', 'round-action--active');
-                cy.get('.round-action--wishlist > .round-action__text').should('contain', 'Zur Merkliste hinzufügen').click();//change contains
-                cy.get('.round-action--wishlist').should('contain', 'Von der Merkliste entfernen');//change
+                cy.get('.round-action--wishlist > .round-action__text').should('contain', 'Añadir a Quiero Ver').click();
+                cy.get('.round-action--wishlist').should('contain', 'Quitar de Quiero Ver');
                 cy.get('.round-action--wishlist').should('have.class', 'round-action--active');
-            } else {
-              //Do Something 
-            }
+            } 
           })
     }
 

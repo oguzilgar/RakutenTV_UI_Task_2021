@@ -1,9 +1,11 @@
 {
   "env":{
     "user":{
-    "email" : "TestEmailAddress@gmail.com",
-    "password" : "Test12345",
-    "searchMovie" : "cortex"
+    "email" : "ouz_testEmail@gmail.com",
+    "password" : "TestPassword1234",
+    "Invalid_email" : "TestEmailAddress_Invalid_gmail.com",
+    "Invalid_password" : "Test12345_Wrong",
+    "searchMovie" : "avatar"
     }
   },
     "video": false,
@@ -12,6 +14,6 @@
     "requestTimeout": 60000,
     "viewportWidth": 1920,
     "viewportHeight": 1200,
-    "rakutenBaseUrl": "https://www.rakuten.tv/de"
+    "rakutenBaseUrl": "https://www.rakuten.tv/es"
   }
  

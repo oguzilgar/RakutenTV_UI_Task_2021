@@ -26,8 +26,7 @@ describe('Add content to wishlist test scenarios', () => {
             homePage.clickLoginButton();
             loginPage.insertEmailAndPassword(credentials.email, credentials.password);
             loginPage.clickSubmitButton();
-            //loginPage.isLoggedInSuccessfully();
-            cy.wait(3000);
+            loginPage.isLoggedInSuccessfully();
             dashboardPage.searchMovie(credentials.searchMovie);
             contentDetailPage.isSearchedMovieDisplayed(credentials.searchMovie);
             contentDetailPage.clickAddToWishlistIcon();

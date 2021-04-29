@@ -22,5 +22,12 @@ describe('Rakuten login test scenarios', () => {
       loginPage.clickSubmitButton();
       loginPage.isLoggedInSuccessfully();
     })
+
+    it('The Not - registered user should not be able to login', () => {
+      homePage.clickLoginButton();
+      loginPage.insertEmailAndPassword(credentials.Invalid_email, credentials.password);
+      loginPage.clickSubmitButton();
+      loginPage.isWrongCredentialsMessageDisplayed();
+    })
   });
 });

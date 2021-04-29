@@ -12,7 +12,7 @@ Cypress.Commands.add('isNavigatedToTheWebsite', () => {
 });
 
 Cypress.Commands.add('acceptCookies', () => {
-  cy.wait(3000);
+  cy.get('#gdpr-consent-tool-wrapper').should('be.visible');
   cy.get('#gdpr-consent-notice')
     .then(($iframe) => {
       const $body = $iframe.contents().find('body');
@@ -26,7 +26,7 @@ Cypress.Commands.add('acceptCookies', () => {
         .click();
     })
 
-  cy.wait(1000);
+  cy.get('#gdpr-consent-tool-wrapper').should('not.exist');
   cy.get('#gdpr-consent-notice')
     .should('not.exist');
 });

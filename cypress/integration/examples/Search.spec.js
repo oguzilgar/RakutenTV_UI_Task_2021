@@ -24,47 +24,10 @@ describe('Search content test scenarios', () => {
             homePage.clickLoginButton();
             loginPage.insertEmailAndPassword(credentials.email, credentials.password);
             loginPage.clickSubmitButton();
-            //loginPage.isLoggedInSuccessfully();
-            cy.wait(5000);
+            loginPage.isLoggedInSuccessfully();
             dashboardPage.searchMovie(credentials.searchMovie);
             contentDetailPage.isSearchedMovieDisplayed(credentials.searchMovie);
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        it.skip('The user should be able to add a movie from HomePage', () => {
-            homePage.clickLoginButton();
-            loginPage.insertEmailAndPassword(credentials.email, credentials.password);
-            loginPage.clickSubmitButton();
-            //loginPage.isLoggedInSuccessfully();  
-        });
-
-        it.skip('The user should be able to add a movie by hover over', () => {
-            homePage.clickLoginButton();
-            loginPage.insertEmailAndPassword(credentials.email, credentials.password);
-            loginPage.clickSubmitButton();
-            //loginPage.isLoggedInSuccessfully();  
-        });
     });
 });
