@@ -11,14 +11,16 @@ To know;
  All test cases are located in Integration file.
  POM files are added under Page objects.
  It could be added more test cases for the features but I didnt know the limitation.
+ I installed faker by command 'npm i faker', you may need to do that.
+ 
 
 
 
 To run locally:
- npm install
- npm install cypress --save-dev
- npm init
- Cypress run
+ 'npm install'
+ 'npm install cypress --save-dev'
+ 'npm init'
+ 'Cypress open' and click to start the test
 
 
 
